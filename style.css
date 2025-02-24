@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0a0a0a;
+    color: #00ffcc;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    margin-top: 30px;
+    font-size: 24px;
+    animation: glitch 1s infinite alternate;
+}
+
+/* Style untuk judul */
+h1, h2 {
+    color: #ff6600;
+}
+
+/* Semua section dibuat seragam dengan ukuran tabel */
+section {
+    margin: 20px auto;
+    width: 70%;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    border: 2px solid #ff6600;
+    box-shadow: 0px 0px 10px #ff6600;
+}
+
+/* Style untuk tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #0a0a0a;
+    color: #00ffcc;
+}
+
+th, td {
+    border: 1px solid #ff6600;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #ff6600;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #111;
+}
+
+tr:hover {
+    background-color: #222;
+}
+
+/* Animasi glitch */
+@keyframes glitch {
+    0% { text-shadow: 2px 2px red; }
+    100% { text-shadow: -2px -2px blue; }
+}
+
+/* Efek teks berkedip */
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+#animated-text {
+    font-size: 2em;
+    font-weight: bold;
+    animation: blink 1.5s linear infinite;
+}
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.contact-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.telegram {
+    background-color: #0088cc;
+}
+
+.whatsapp {
+    background-color: #25d366;
+}
+
+.contact-btn:hover {
+    opacity: 0.8;
+}
